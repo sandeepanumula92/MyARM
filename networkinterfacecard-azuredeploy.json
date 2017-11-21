@@ -19,7 +19,7 @@
     "nic1": "[concat(uniquestring(resourceGroup().id), '21nov17nic')]",
 	"publicIPAddressName": "[parameters('publicIPAddressName')]",
 	"ipConfig": "[parameters('ipConfigname')]",
-	"subnet1Name": "[parameters('subnetName')]",
+	"subnet1Name": "[parameters('subnet1Name')]",
 	 "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
 	"virtualNetworkName": "[parameters('vnetName')]",
 	"vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]"
