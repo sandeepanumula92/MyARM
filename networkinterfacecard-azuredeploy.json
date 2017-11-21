@@ -5,7 +5,7 @@
   "publicIPAddressName":{
     "type": "string"
   },
-   "ipconfigname": {
+   "ipConfigname": {
       "type": "string"
     },
 	 "subnet1Name": {
@@ -18,7 +18,7 @@
    "variables": {
     "nic1": "[concat(uniquestring(resourceGroup().id), '21nov17nic')]",
 	"publicIPAddressName": "[parameters('publicIPAddressName')]",
-	"ipConfig": "[parameters('ipconfig')]",
+	"ipConfig": "[parameters('ipconfigname')]",
 	"subnet1Name": "[parameters('subnetName')]",
 	 "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
 	"virtualNetworkName": "[parameters('vnetName')]",
