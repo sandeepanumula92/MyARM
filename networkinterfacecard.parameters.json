@@ -5,7 +5,7 @@
    "vnetName": {
           "value": "VNet1"
           },
-      "subnetName": {
+      "subnet1Name": {
             "value": "Subnet1"
           },
 		  "publicIPAddressName": {
