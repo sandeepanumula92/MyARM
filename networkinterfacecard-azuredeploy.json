@@ -8,7 +8,7 @@
    "ipconfigname": {
       "type": "string"
     },
-	 "subnetName": {
+	 "subnet1Name": {
       "type": "string"
     },
 	"vnetName": {
@@ -19,8 +19,8 @@
     "nic1": "[concat(uniquestring(resourceGroup().id), '21nov17nic')]",
 	"publicIPAddressName": "[parameters('publicIPAddressName')]",
 	"ipConfig": "[parameters('ipconfig')]",
-	"subnetName": "[parameters('subnetName')]",
-    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
+	"subnet1Name": "[parameters('subnetName')]",
+	 "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
 	"virtualNetworkName": "[parameters('vnetName')]",
 	"vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]"
 	},
@@ -39,7 +39,7 @@
             "name": "[variables('ipConfigname')]",
             "properties": {
               "subnet": {
-                "id": "[variables('subnetRef')]"
+                "id": "[variables('subnet1Ref')]"
               },
               "privateIPAllocationMethod": "Dynamic",
               "publicIpAddress": {
