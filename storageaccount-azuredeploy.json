@@ -17,7 +17,6 @@
     },
  "storageaccountname": {
       "type": "string",
-      "defaultValue": "nestlesa",
       "metadata": {
         "description": "Storage Account Name"
       }
