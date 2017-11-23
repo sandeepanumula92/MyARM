@@ -40,7 +40,7 @@
               },
               "privateIPAllocationMethod": "Dynamic",
               "publicIpAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIpAddresses', variables('publicIpAddressName'))]"
+                "id": "/subscriptions/f0a5ec24-0254-4026-b0b8-5fa53aff162c/resourceGroups/MyARMRG/providers/Microsoft.Network/publicIPAddresses/publicIp1"
               }
             }
           }
