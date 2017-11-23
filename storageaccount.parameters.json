@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0", 
    "parameters": {
       "storageaccountname": {
-          "value": "armsa21nov2017"
+          "value": "armsa23nov2017"
           },
        "storageAccountType": {
            "value": "Standard_GRS"
