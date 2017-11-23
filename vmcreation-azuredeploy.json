@@ -43,10 +43,6 @@
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[variables('vmName')]",
       "location": "[resourceGroup().location]",
-      "dependsOn": [
-                "[variables('nic1')]",
-                "[variables('publicIPAddressName')]"
-        ],
       "properties": {
         "hardwareProfile": {
           "vmSize": "[parameters('virtualMachineSize')]"
