@@ -83,7 +83,7 @@
               "properties": {
                 "primary": true
               },
-              "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('nic1'))]"
+              "id": "/subscriptions/f0a5ec24-0254-4026-b0b8-5fa53aff162c/resourceGroups/MyARMRG/providers/Microsoft.Network/networkInterfaces/n4ncxbsnai3cs23nov17nic"
             }
           ]
         }
