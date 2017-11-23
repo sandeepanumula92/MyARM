@@ -6,23 +6,22 @@
            "value": "Standard_DS1_v2"
        }, 
       "adminUsername": {
-           "value": "vmAdmin"
+           "value": "adminUser"
        },
       "adminPassword": {
-           "value": "vmPassword!123"
+           "value": "Password@123"
        }, 
       "virtualMachineName": {
-           "value": "vm12"
+           "value": "VM1"
        },
       "windowsOSVersion": {
            "value": "2016-Datacenter"
        },
       "publicIPAddressName": {
-           "value": "PubIP12"
+           "value": "PublicIp1"
        },
 	   "nicName":{
 	   "value":"n4ncxbsnai3cs23nov17nic"
-	   }
+   }
   }
 }
-
