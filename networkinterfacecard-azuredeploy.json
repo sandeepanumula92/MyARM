@@ -16,23 +16,20 @@
     }
   },
    "variables": {
-    "nic1": "[concat(uniquestring(resourceGroup().id), '21nov17nic')]",
-	"publicIPAddressName": "[parameters('publicIPAddressName')]",
-	"ipConfig": "[parameters('ipConfigname')]",
-	"subnet1Name": "[parameters('subnet1Name')]",
-	 "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
-	"virtualNetworkName": "[parameters('vnetName')]",
-	"vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]"
+    "nic1": "[concat(uniquestring(resourceGroup().id), '23nov17nic')]",
+    "publicIPAddressName": "[parameters('publicIPAddressName')]",
+    "ipConfig": "[parameters('ipConfigname')]",
+    "subnet1Name": "[parameters('subnet1Name')]",
+    "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
+    "virtualNetworkName": "[parameters('vnetName')]",
+    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]"
 	},
-	"resources": [
+    "resources": [
 	{
       "name": "[variables('nic1')]",
       "type": "Microsoft.Network/networkInterfaces",
       "apiVersion": "2017-06-01",
       "location": "[resourceGroup().location]",
-      "dependsOn": [
-        "[variables('publicIPAddressName')]"
-      ],
       "properties": {
         "ipConfigurations": [
           {
